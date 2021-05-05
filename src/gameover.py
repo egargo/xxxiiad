@@ -24,7 +24,6 @@ from src.formatting import *
 
 class GameOver():
     def gameover(self):
-        self.options = ['PLAY AGAIN', 'EXIT']
         if self.h_player1 <= 0 or self.h_player2 <= 0:
             if self.h_player1 > self.h_player2:
                 self.frame.destroy(), self.w_player1()
@@ -46,7 +45,9 @@ class GameOver():
         f_menu = tk.Frame(self.frame, width=100, bg = BLACK, bd = 10)
         f_menu.pack(side = tk.BOTTOM, fill = 'both')
         
-        for opts in self.options:
+        options = ['PLAY AGAIN', 'EXIT']
+        
+        for opts in options:
             buttons = tk.Button(f_menu, text = opts, font = FONT,
                 fg = WHITE, bg = BLACK, activeforeground = WHITE,
                 activebackground = RED, width = 10, bd = 0,
@@ -67,7 +68,9 @@ class GameOver():
         f_menu = tk.Frame(self.frame, width=100, bg = BLACK, bd = 10)
         f_menu.pack(side = tk.BOTTOM, fill = 'both')
         
-        for opts in self.options:
+        options = ['PLAY AGAIN', 'EXIT']
+        
+        for opts in options:
             buttons = tk.Button(f_menu, text = opts, font = FONT,
                 fg = WHITE, bg = BLACK, activeforeground = WHITE,
                 activebackground = RED, width = 10, bd = 0,
