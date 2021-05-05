@@ -1,4 +1,4 @@
-# XXXII Documentation
+program# XXXII Documentation
 ![screenshot](res/cover.png)
 
 ## Contents
@@ -20,7 +20,7 @@
 * [License](#license)
 
 ### About
-I made this game in compliance to my Computer Programming 2 class with tkinter, random modules, and some basic maths.
+I made this game in compliance to my Computer programing 2 class with tkinter, random modules, and some basic maths.
 
 
 ### The Process of Making this Game
@@ -121,4 +121,4 @@ To save lines of code, I made this module to store the configuration for the gam
 
 
 ### License
-This programm is provided under the GPL-3.0 License. See [LICENSE](https://github.com/clieg/xxxii/blob/master/LICENSE) for more details.
+This program is provided under the GPL-3.0 License. See [LICENSE](https://github.com/clieg/xxxii/blob/master/LICENSE) for more details.

@@ -45,4 +45,4 @@ Read the game's [documentation](https://github.com/clieg/xxxii/blob/master/DOC.m
 
 
 #### License
-This programm is provided under the GPL-3.0 License. See [LICENSE](https://github.com/clieg/xxxii/blob/master/LICENSE) for more details.
+This program is provided under the GPL-3.0 License. See [LICENSE](https://github.com/clieg/xxxii/blob/master/LICENSE) for more details.
