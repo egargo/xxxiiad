@@ -10,7 +10,7 @@
 
 
 #### Screenshot
-![screenshot](https://raw.githubusercontent.com/clieg/clieg.github.io/master/images/xxxii.png)
+![screenshot](res/screenshot.png)
 
 #### Requirements
 * Python3 

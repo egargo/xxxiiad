@@ -1,4 +1,4 @@
-program# XXXII Documentation
+# XXXII Documentation
 ![screenshot](res/cover.png)
 
 ## Contents
