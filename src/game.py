@@ -28,8 +28,8 @@ class Game(GameOver):
     def commands(self, opts):
         # Generate pseudo-random numbers for the heal and damage points.
         heal = random.randrange(1, 10)
-        dmg_punch = random.randrange(1, 5)
-        dmg_kick = random.randrange(1, 10)
+        dmg_punch = random.randrange(1, 10)
+        dmg_kick = random.randrange(1, 20)
         
         
         # This will keep on running if the conditions are true.
@@ -108,8 +108,8 @@ class Game(GameOver):
     def game(self):
         # Players' initial health points.
         # Change these based on how long you want the game to last.
-        self.h_player1 = 20
-        self.h_player2 = 20
+        self.h_player1 = 100
+        self.h_player2 = 100
         
         
         # The main frame that contains the elements of the game.
