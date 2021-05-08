@@ -26,6 +26,7 @@ class Main(Game):
     def __init__(self):
         self.root = tk.Tk()
         self.root.title(TITLE)
+        self.root.iconphoto(False, tk.PhotoImage(file = 'res/icon.png'))
         self.root.resizable(0, 0)
         self.root.geometry(WH)
         self.root.config(bg = BLACK)
