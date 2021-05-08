@@ -29,14 +29,17 @@ if __name__ == '__main__':
     # Using the `argparse` library, I added command line options to the game.
     parser = argparse.ArgumentParser()
     
-    parser.add_argument('-v', '--version', action = 'store_true', help = 'shows version')
-    parser.add_argument('-l', '--license', action = 'store_true', help = 'shows license')
-    parser.add_argument('-V', '--Verbose', action = 'store_true', help = 'shows verbose')
+    parser.add_argument('-a', '--author', action = 'store_true', help = 'show author')
+    parser.add_argument('-v', '--version', action = 'store_true', help = 'show version')
+    parser.add_argument('-l', '--license', action = 'store_true', help = 'show license')
+    parser.add_argument('-V', '--Verbose', action = 'store_true', help = 'show verbose')
     
     args = parser.parse_args()
     
-    if args.version:
-        print("Version 0.0.1")
+    if args.author:
+        print('Made by Clint E. <https://github.com/clieg> | BSIT - 1R1')
+    elif args.version:
+        print('Version 0.0.1')
     elif args.license:
         print('This program is provided under the GPL-3.0 License. See LICENSE for more details.')
     elif args.Verbose:
