@@ -134,13 +134,13 @@ class Game(GameOver):
         # To save lines of codes, I stored their text values in a list named
         # `options`, made a `for` loop, and iterate the list.
         # Then I configured the command actions for each buttons.
-        self.f_buttons = tk.Frame(self.frame, bg = BLACK, width = 640)
-        self.f_buttons.pack(side = tk.BOTTOM, fill = 'both')
+        f_buttons = tk.Frame(self.frame, bg = BLACK, width = 640)
+        f_buttons.pack(side = tk.BOTTOM, fill = 'both')
         
         options = ['PUNCH', 'KICK', 'HEAL', 'SURRENDER']
         
         for opts in options:
-            buttons = tk.Button(self.f_buttons, text = opts, font = FONT,
+            buttons = tk.Button(f_buttons, text = opts, font = FONT,
                 fg = WHITE, bg = BLACK, activeforeground = WHITE,
                 activebackground = RED, width = 10, bd = 0,
                 highlightthickness = 1, highlightbackground = RED)
@@ -151,18 +151,18 @@ class Game(GameOver):
         
         # Player one
         # This displays the first player's avatar and name.
-        self.f_player1 = tk.Frame(self.frame, bg = BLACK, width = 200, height = 200)
-        self.f_player1.pack(side = tk.LEFT)
+        f_player1 = tk.Frame(self.frame, bg = BLACK, width = 200, height = 200)
+        f_player1.pack(side = tk.LEFT)
         
-        self.l_player1 = tk.Label(self.f_player1, text = 'PLAYER 1', font = FONT,
+        l_player1 = tk.Label(f_player1, text = 'PLAYER 1', font = FONT,
             fg = WHITE, bg = BLACK).pack()
             
         self.a_player1 = tk.PhotoImage(file = 'res/player_1.png')
-        Label = tk.Label(self.f_player1, image = self.a_player1, highlightthickness = 2,
+        Label = tk.Label(f_player1, image = self.a_player1, highlightthickness = 2,
             highlightbackground = WHITE, bd = 0)
         Label.pack()
         
-        self.n_player1 = tk.Label(self.f_player1, text = 'GAIUS OCTAVIUS ', font = BITALIC,
+        n_player1 = tk.Label(f_player1, text = 'GAIUS OCTAVIUS ', font = BITALIC,
             fg = WHITE, bg = BLACK).pack(side = tk.BOTTOM)
         
         
@@ -182,21 +182,22 @@ class Game(GameOver):
         self.l_hp.pack()
         
         # Display the 'VS' (versus) sign.
-        self.l_vs = tk.Label(self.f_stats, bg = BLACK, text = 'VS',
-            font = VS, fg = WHITE)
-        self.l_vs.pack(side = tk.BOTTOM)
+        l_vs = tk.Label(self.f_stats, bg = BLACK, text = 'VS',
+            font = VS, fg = WHITE).pack(side = tk.BOTTOM)
         
         
         # Player two
         # This displays the first player's avatar and name.
-        self.f_player2 = tk.Frame(self.frame, bg = BLACK, width = 200, height = 250)
-        self.f_player2.pack(side = tk.RIGHT)
+        f_player2 = tk.Frame(self.frame, bg = BLACK, width = 200, height = 250)
+        f_player2.pack(side = tk.RIGHT)
         
-        self.l_player2 = tk.Label(self.f_player2, text = 'PLAYER 2', font = ('Silver', 15),
+        l_player2 = tk.Label(f_player2, text = 'PLAYER 2', font = ('Silver', 15),
             fg = WHITE, bg = BLACK).pack()
+            
         self.a_player2 = tk.PhotoImage(file = 'res/player_2.png')
-        Label = tk.Label(self.f_player2, image = self.a_player2, highlightthickness = 2,
+        Label = tk.Label(f_player2, image = self.a_player2, highlightthickness = 2,
             highlightbackground = WHITE, bd = 0)
         Label.pack()
-        self.n_player2 = tk.Label(self.f_player2, text = 'MARCUS ANTONIUS', font = BITALIC,
+        
+        n_player2 = tk.Label(f_player2, text = 'MARCUS ANTONIUS', font = BITALIC,
             fg = WHITE, bg = BLACK).pack(side = tk.BOTTOM)

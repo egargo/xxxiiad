@@ -56,8 +56,8 @@ class GameOver():
             buttons.configure(command = action)
             buttons.pack(side = tk. LEFT, padx = 5, fill = 'both', expand = 'yes')
             
-        self.i_cover = tk.PhotoImage(file = 'res/w_player1.png')
-        l_cover = tk.Label(self.frame, image = self.i_cover, bd = 0)
+        self.i_wplayer1 = tk.PhotoImage(file = 'res/w_player1.png')
+        l_cover = tk.Label(self.frame, image = self.i_wplayer1, bd = 0)
         l_cover.pack()
         
         
@@ -79,6 +79,6 @@ class GameOver():
             buttons.configure(command = action)
             buttons.pack(side = tk. LEFT, padx = 5, fill = 'both', expand = 'yes')
             
-        self.i_cover = tk.PhotoImage(file = 'res/w_player2.png')
-        l_cover = tk.Label(self.frame, image = self.i_cover, bd = 0)
+        self.i_wplayer2 = tk.PhotoImage(file = 'res/w_player2.png')
+        l_cover = tk.Label(self.frame, image = self.i_wplayer2, bd = 0)
         l_cover.pack()
