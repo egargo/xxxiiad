@@ -13,7 +13,7 @@
 ![screenshot](res/screenshot.png)
 
 #### Requirements
-* Python3 
+* Python3
 * Python3 Tkinter
 
 
@@ -26,11 +26,6 @@ If you have Git installed, you can run the command `git clone https://github.com
 Before running the game, copy the Silver font to your `~/.fonts` directory, this is found at the `res/fonts/` directory. To do this, run the command `cp -v Silver.ttf`, if the `~/.fonts` does not exist, create one by running the command `mkdir ~/.fonts`.
 To run the game, run the command `chmod +x run_xxxii.py` to make the game executable, then run the command `./run_xxxii.py` to execute the game.
 Or just run the command `python3 run_xxxii.py`
-
-
-##### Windows
-If this does not work. Maybe try dual booting or setting up a VM with Linux.
-*I haven't tested this game on Windows machine, but considering that Python is cross-platform, then there shouldn't be any problem.*
 
 
 #### Windows
