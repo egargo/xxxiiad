@@ -81,7 +81,7 @@ If you have Git installed, you can run the command `git clone https://github.com
 
 
 ### Tools Used
-* [Linux (Pop!_OS)](https://pop.system76.com/)
+* [Fedora](https://getfedora.org)
 * [Python](https://python.org)
 * [Atom](https://atom.io)
 * [Git](https://git-scm.com)
@@ -105,13 +105,14 @@ To run the game, run the command `python3 run_xxxii.py`.
 Using the `argparse` library, I added command line options to the game. Running the command `./run_xxxii.py --h` or `python3 run_xxxii.py` will display the command line help option of the game:
 
 ```bash
-usage: run_xxxii.py [-h] [-v] [-l] [-V]
+usage: run_xxxii.py [-h] [-a] [-v] [-l] [-V]
 
 optional arguments:
   -h, --help     show this help message and exit
-  -v, --version  shows version
-  -l, --license  shows license
-  -V, --Verbose  shows verbose
+  -a, --author   show author
+  -v, --version  show version
+  -l, --license  show license
+  -V, --Verbose  show verbose
 ```
 
 

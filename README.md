@@ -2,11 +2,11 @@
 
 ![cover](res/cover.png)
 
-[![python](https://img.shields.io/badge/made_with-python-c74c34?labelColor=23261f&)](https://python.org)
-[![license](https://img.shields.io/badge/license-GPL&#8208;3.0-c74c34?labelColor=23261f&)](https://github.com/clieg/xxxii/blob/master/LICENSE)
-[![git](https://img.shields.io/badge/uses-git-c74c34?labelColor=23261f&)](https://git-scm.com)
+[![python](https://img.shields.io/badge/made_with-python-c74c34?labelColor=23261f&logo=python&logoColor=c74c34)](https://python.org)
+[![license](https://img.shields.io/badge/license-GPL&#8208;3.0-c74c34?labelColor=23261f&logo=gnu&logoColor=c74c34)](https://github.com/clieg/xxxii/blob/master/LICENSE)
+[![git](https://img.shields.io/badge/uses-git-c74c34?labelColor=23261f&logo=git&logoColor=c74c34)](https://git-scm.com)
+![linux](https://img.shields.io/badge/works_on-my_machine-c74c34?labelColor=23261f&logo=fedora&logoColor=c74c34)
 [![lasagna_code](https://img.shields.io/badge/contains-tasty_lasagna_code-c74c34?labelColor=23261f)](https://en.wikipedia.org/wiki/Spaghetti_code#Lasagna_code)
-![linux](https://img.shields.io/badge/works_on-my_machine-c74c34?labelColor=23261f&)
 
 
 #### Screenshot
@@ -38,13 +38,14 @@ To run the game, run the command `python3 run_xxxii.py`.
 Running the command `./run_xxxii.py --h` or `python3 run_xxxii.py` will display the command line help option of the game:
 
 ```bash
-usage: run_xxxii.py [-h] [-v] [-l] [-V]
+usage: run_xxxii.py [-h] [-a] [-v] [-l] [-V]
 
 optional arguments:
   -h, --help     show this help message and exit
-  -v, --version  shows version
-  -l, --license  shows license
-  -V, --Verbose  shows verbose
+  -a, --author   show author
+  -v, --version  show version
+  -l, --license  show license
+  -V, --Verbose  show verbose
 ```
 
 ### Documentation
