@@ -61,10 +61,6 @@ In the design phase, I used the list I made in the analysis phase.
         * Solved by using the .config() function -- changed the label depending on how much HP the player recovered
 
 
-### Downloading the Repository
-If you have Git installed, you can run the command `git clone https://github.com/clieg/xxxii.git`. Otherwise, download the game's repo manually.
-
-
 ### Requirements
 * Python 3 or above
 * Python Tkinter
@@ -75,8 +71,8 @@ If you have Git installed, you can run the command `git clone https://github.com
 * [Battle of Actium](https://en.wikipedia.org/wiki/Battle_of_Actium)
 * [Pantheon](https://en.wikipedia.org/wiki/Pantheon,_Rome)
 * [Lighthouse of Alexandria](https://en.wikipedia.org/wiki/Alexandria_lighthouse)
-* [Caesar Augustus's Bust](https://upload.wikimedia.org/wikipedia/commons/0/0b/Augustus_Bevilacqua_Glyptothek_Munich_317.jpg)
-* [Marcus Antonius's Bust](https://upload.wikimedia.org/wikipedia/commons/2/21/Marcus_Antonius_marble_bust_in_the_Vatican_Museums.jpg)
+* [Caesar Augustus' Bust](https://upload.wikimedia.org/wikipedia/commons/0/0b/Augustus_Bevilacqua_Glyptothek_Munich_317.jpg)
+* [Marcus Antonius' Bust](https://upload.wikimedia.org/wikipedia/commons/2/21/Marcus_Antonius_marble_bust_in_the_Vatican_Museums.jpg)
 * [Silver, a font for games by Poppy Works](https://poppyworks.itch.io/silver)
 
 
@@ -90,14 +86,33 @@ If you have Git installed, you can run the command `git clone https://github.com
 
 ### Running
 ##### Unix-like
-Before running the game, copy the font to your `~/.fonts` directory, this is found at the `res/fonts/` directory. To do this, run the command `cp -v Silver.ttf`, if the `~/.fonts` does not exist, create one by running the command `mkdir ~/.fonts`.
-To run the game, run the command `chmod +x run_xxxii.py` to make the game executable, then run the command `./run_xxxii.py` to execute the game.
-Or just run the command `python3 run_xxxii.py`
+Before running the game, copy the Silver font, this is found at the `res/fonts/Silver.ttf` directory. To do this, follow the instructions below:
+```bash
+# Download the repo
+git clone https://github.com/clieg/xxxii.git
+
+# Go the the repo's directory
+cd xxxii
+
+# Copy the font to the /.fonts directory
+cp -v res/fonts/Silvert.ttf ~/.fonts
+
+# If ~/.fonts directory does not exist
+mkdir ~/.fonts
+
+# Run the game
+./run_xxxii.py
+
+```
 
 
 ##### Windows
-Before running the game, copy the Silver font, this is found at the `res/fonts/` directory. To do this simply double click the font and install it.
-To run the game, run the command `python3 run_xxxii.py`.
+Before running the game, install the Silver font, this is found at the `res/fonts/Silver.ttf` directory. To do this simply double click the font and install it.
+
+```shell
+# Run the game
+python3 run_xxxii.py
+```
 *If this does not work. Maybe try dual booting, setting up a VM with Linux, or use WSL. I haven't tested this game on Windows machine, but considering that Python is cross-platform, then there shouldn't be any problem.*
 
 
@@ -122,8 +137,4 @@ To save lines of code, I made this module to store the configuration for the gam
 
 
 ### License
-This program is provided under the GPL-3.0 License. See [LICENSE](https://github.com/clieg/xxxii/blob/master/LICENSE) for more details.
-
-
-### Author
-[Clint E.](https://github.com/clieg)
+Made by [Clint E](https://github.com/clieg). This program is provided under the [GPL-3.0 License](https://github.com/clieg/xxxii/blob/master/LICENSE).
