@@ -41,27 +41,21 @@ mkdir ~/.fonts
 
 #### Windows
 Before running the game, install the Silver font, this is found at the `res/fonts/Silver.ttf` directory. To do this simply double click the font and install it.
-
 ```shell
 # Run the game
 python3 run_xxxii.py
 ```
-*If this does not work. Maybe try dual booting, setting up a VM with Linux, or use WSL. I haven't tested this game on Windows machine, but considering that Python is cross-platform, then there shouldn't be any problem.*
+*If this does not work. Maybe try dual booting, setting up a VM with Linux, or use WSL.*
 
 
-### Usage
-Running the command `./run_xxxii.py --h` or `python3 run_xxxii.py` will display the command line help option of the game:
-
-```bash
-usage: run_xxxii.py [-h] [-a] [-v] [-l] [-V]
-
-optional arguments:
-  -h, --help     show this help message and exit
-  -a, --author   show author
-  -v, --version  show version
-  -l, --license  show license
-  -V, --Verbose  show verbose
-```
+### Resources Used
+* [Silver, a font for games by Poppy Works](https://poppyworks.itch.io/silver)
+* [PEP 8 Style Guide for Python Code](https://python.org/dev/peps/pep-0008)
+* [Battle of Actium](https://en.wikipedia.org/wiki/Battle_of_Actium)
+* [Pantheon](https://en.wikipedia.org/wiki/Pantheon,_Rome)
+* [Lighthouse of Alexandria](https://en.wikipedia.org/wiki/Alexandria_lighthouse)
+* [Caesar Augustus' Bust](https://upload.wikimedia.org/wikipedia/commons/0/0b/Augustus_Bevilacqua_Glyptothek_Munich_317.jpg)
+* [Marcus Antonius' Bust](https://upload.wikimedia.org/wikipedia/commons/2/21/Marcus_Antonius_marble_bust_in_the_Vatican_Museums.jpg)
 
 ### Documentation
 Read the game's [documentation](https://github.com/clieg/xxxii/blob/master/DOC.md).

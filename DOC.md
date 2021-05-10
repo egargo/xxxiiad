@@ -20,7 +20,7 @@
 * [License](#license)
 
 ### About
-I made this game in compliance to my Computer programing 2 class with tkinter, random modules, and some basic maths.
+I am making this game for compliance to my Computer Programming 2 class, using tkinter, random module, and basic maths.
 
 
 ### The Process of Making this Game
@@ -67,13 +67,13 @@ In the design phase, I used the list I made in the analysis phase.
 
 
 ### Resources Used
+* [Silver, a font for games by Poppy Works](https://poppyworks.itch.io/silver)
 * [PEP 8 Style Guide for Python Code](https://python.org/dev/peps/pep-0008)
 * [Battle of Actium](https://en.wikipedia.org/wiki/Battle_of_Actium)
 * [Pantheon](https://en.wikipedia.org/wiki/Pantheon,_Rome)
 * [Lighthouse of Alexandria](https://en.wikipedia.org/wiki/Alexandria_lighthouse)
 * [Caesar Augustus' Bust](https://upload.wikimedia.org/wikipedia/commons/0/0b/Augustus_Bevilacqua_Glyptothek_Munich_317.jpg)
 * [Marcus Antonius' Bust](https://upload.wikimedia.org/wikipedia/commons/2/21/Marcus_Antonius_marble_bust_in_the_Vatican_Museums.jpg)
-* [Silver, a font for games by Poppy Works](https://poppyworks.itch.io/silver)
 
 
 ### Tools Used
@@ -108,7 +108,6 @@ mkdir ~/.fonts
 
 ##### Windows
 Before running the game, install the Silver font, this is found at the `res/fonts/Silver.ttf` directory. To do this simply double click the font and install it.
-
 ```shell
 # Run the game
 python3 run_xxxii.py
@@ -118,7 +117,6 @@ python3 run_xxxii.py
 
 ##### Usage
 Using the `argparse` library, I added command line options to the game. Running the command `./run_xxxii.py --h` or `python3 run_xxxii.py` will display the command line help option of the game:
-
 ```bash
 usage: run_xxxii.py [-h] [-a] [-v] [-l] [-V]
 
