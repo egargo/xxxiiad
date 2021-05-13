@@ -41,7 +41,7 @@ if __name__ == '__main__':
     elif args.version:
         print('Version 0.0.1')
     elif args.license:
-        print('This program is provided under the GPL-3.0 License. See LICENSE for more details.')
+        print('Made by Clint E. This program is provided under the GPL-3.0 License.')
     elif args.Verbose:
         print('Disk Version [September 27, 1986]\nHow many files (0-15)?\nNEC PC-8001 BASIC Version 2.8\nPublished by Clint\n56810 Bytes free\nOk')
     else:

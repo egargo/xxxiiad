@@ -65,7 +65,7 @@ class Main(Game):
         f_buttons.pack(side = tk.BOTTOM, fill = 'both')
         
         buttons = tk.Button(f_buttons, text = 'START CAMPAIGN', font = FONT,
-            fg = WHITE, bg = BLACK, activeforeground = WHITE,
+            fg = BLACK, bg = WHITE, activeforeground = WHITE,
             activebackground = RED, width = 10, bd = 0,
             highlightthickness = 1, highlightbackground = RED,
             command=lambda:(self.f_prologue.destroy(), self.game()))
@@ -93,7 +93,7 @@ class Main(Game):
         
         for opts in options:
             buttons = tk.Button(f_menu, text = opts, font = FONT,
-                fg = WHITE, bg = BLACK, activeforeground = WHITE,
+                fg = BLACK, bg = WHITE, activeforeground = WHITE,
                 activebackground = RED, width = 10, bd = 0,
                 highlightthickness = 1, highlightbackground = RED)
             action = lambda opts = opts: self.commands_main(opts)

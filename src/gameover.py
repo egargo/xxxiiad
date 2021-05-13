@@ -49,7 +49,7 @@ class GameOver():
         
         for opts in options:
             buttons = tk.Button(f_menu, text = opts, font = FONT,
-                fg = WHITE, bg = BLACK, activeforeground = WHITE,
+                fg = BLACK, bg = WHITE, activeforeground = WHITE,
                 activebackground = RED, width = 10, bd = 0,
                 highlightthickness = 1, highlightbackground = RED)
             action = lambda opts = opts: self.commands_over(opts)
@@ -72,7 +72,7 @@ class GameOver():
         
         for opts in options:
             buttons = tk.Button(f_menu, text = opts, font = FONT,
-                fg = WHITE, bg = BLACK, activeforeground = WHITE,
+                fg = BLACK, bg = WHITE, activeforeground = WHITE,
                 activebackground = RED, width = 10, bd = 0,
                 highlightthickness = 1, highlightbackground = RED)
             action = lambda opts = opts: self.commands_over(opts)

@@ -20,11 +20,14 @@
 # To save lines of code, I made this module to store the configuration for the
 # game, e.g., the title, geometry, fonts, colours, and anchors.
 
+
 # Title
 TITLE = 'XXXII'
 
+
 # Geometry
 WH = '640x400'
+
 
 # Fonts
 FONT = ('Silver', 14)
@@ -32,10 +35,12 @@ BOLD = ('Silver', 14, 'bold')
 BITALIC = ('Silver', 14, 'italic bold')
 VS = ('Silver', 64, 'italic bold')
 
+
 # Colours
 RED = '#c74c34'
 BLACK = '#23261f'
 WHITE = '#ffe0a8'
+
 
 # Anchors
 E = 'e'

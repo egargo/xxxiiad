@@ -30,8 +30,8 @@ class Game(GameOver):
         heal = random.randrange(1, 10)
         dmg_punch = random.randrange(1, 10)
         dmg_kick = random.randrange(1, 20)
-        
-        
+
+
         # This will keep on running if the conditions are true.
         while self.h_player1 > 0 and self.h_player2 > 0:
             if self.turn == 1:
@@ -56,6 +56,7 @@ class Game(GameOver):
                         self.l_turn.config(text = 'TURN:\nPLAYER {}'.format(self.turn + 1))
                         self.l_hp.config(text = '{} HP {}'.format(self.h_player1, self.h_player2))
                         self.l_event.config(text = 'GAIUS OCTAVIUS RECOVERED {} HP!\nNEXT TURN: MARCUS ANTONIUS'.format(heal))
+                        
                     else:
                         self.l_turn.config(text = 'TURN:\nPLAYER {}'.format(self.turn + 1))
                         self.l_hp.config(text = '{} HP {}'.format(self.h_player1, self.h_player2))
@@ -63,7 +64,7 @@ class Game(GameOver):
                         
                 if opts == 'SURRENDER':
                     self.frame.destroy(), self.w_player2()
-                    
+
                 self.turn = 2
                 break
                 
@@ -86,25 +87,28 @@ class Game(GameOver):
                 if opts == 'HEAL':
                     if self.h_player2 < 100:
                         self.h_player2 = self.h_player2 + heal
+                        
                         self.l_turn.config(text = 'TURN:\nPLAYER {}'.format(self.turn - 1))
                         self.l_hp.config(text = '{} HP {}'.format(self.h_player1, self.h_player2))
                         self.l_event.config(text = 'MARCUS ANTONIUS RECOVERED {} HP!\nNEXT TURN: GAIUS OCTAVIUS'.format(heal))
+                        
                     else:
                         self.l_turn.config(text = 'TURN:\nPLAYER {}'.format(self.turn - 1))
                         self.l_hp.config(text = '{} HP {}'.format(self.h_player1, self.h_player2))
                         self.l_event.config(text = 'MARCUS ANTONIUS\'S HP IS FULL!\nNEXT TURN: GAIUS OCTAVIUS'.format(heal))
-                
+                        
                 if opts == 'SURRENDER':
                     self.frame.destroy(), self.w_player1()
-                
+                    
                 self.turn = 1
                 break
-                
+        
+        
         # This will be called if the conditions in the `while` is False, i.e.,
         # `self.h_player1` and `self.h_player2` is equal or below zero (0).
         self.gameover()
-            
-            
+        
+        
     def game(self):
         # Players' initial health points.
         # Change these based on how long you want the game to last.
@@ -120,9 +124,10 @@ class Game(GameOver):
         # Display the events during the game.
         # Events includes the health damage that a player has dealt, the
         # health points that a player has recovered, and who turns next.
-        self.f_event = tk.LabelFrame(self.frame, text = 'EVENT:', font = BOLD,
-            fg = WHITE, bg = BLACK, height = 50, width = 640, borderwidth = 1,
-            highlightthickness = 10, highlightbackground = BLACK, relief = tk.FLAT)
+        self.f_event = tk.LabelFrame(self.frame, text = 'EVENT', font = BOLD,
+            labelanchor = tk.N, fg = WHITE, bg = BLACK, height = 50, width = 640,
+            borderwidth = 1, highlightthickness = 10,
+            highlightbackground = BLACK, relief = tk.FLAT)
         self.f_event.pack(side = tk.BOTTOM, fill = 'both')
         
         self.l_event = tk.Label(self.f_event, bg = BLACK, fg = WHITE,
@@ -141,7 +146,7 @@ class Game(GameOver):
         
         for opts in options:
             buttons = tk.Button(f_buttons, text = opts, font = FONT,
-                fg = WHITE, bg = BLACK, activeforeground = WHITE,
+                fg = BLACK, bg = WHITE, activeforeground = WHITE,
                 activebackground = RED, width = 10, bd = 0,
                 highlightthickness = 1, highlightbackground = RED)
             action = lambda opts = opts: self.commands(opts)
@@ -156,7 +161,7 @@ class Game(GameOver):
         
         l_player1 = tk.Label(f_player1, text = 'PLAYER 1', font = FONT,
             fg = WHITE, bg = BLACK).pack()
-            
+        
         self.a_player1 = tk.PhotoImage(file = 'res/player_1.png')
         Label = tk.Label(f_player1, image = self.a_player1, highlightthickness = 2,
             highlightbackground = WHITE, bd = 0)
@@ -175,7 +180,7 @@ class Game(GameOver):
         self.l_turn = tk.Label(self.f_stats, text = 'TURN:\nPLAYER {}'.format(self.turn), font = BOLD,
             fg = WHITE, bg = BLACK)
         self.l_turn.pack()
-            
+        
         # Display the players' health points.
         self.l_hp = tk.Label(self.f_stats, bg = BLACK, fg = WHITE, font = BOLD,
             text = '{} HP {}'.format(self.h_player1, self.h_player2))
@@ -193,7 +198,7 @@ class Game(GameOver):
         
         l_player2 = tk.Label(f_player2, text = 'PLAYER 2', font = ('Silver', 15),
             fg = WHITE, bg = BLACK).pack()
-            
+        
         self.a_player2 = tk.PhotoImage(file = 'res/player_2.png')
         Label = tk.Label(f_player2, image = self.a_player2, highlightthickness = 2,
             highlightbackground = WHITE, bd = 0)
