@@ -37,26 +37,44 @@ class Game(GameOver):
             if self.turn == 1:
                 if opts == 'PUNCH':
                     self.h_player2 = self.h_player2 - dmg_punch
-                    
                     self.l_turn.config(text = 'TURN:\nPLAYER {}'.format(self.turn + 1))
                     self.l_hp.config(text = '{} HP {}'.format(self.h_player1, self.h_player2))
                     self.l_event.config(text = 'GAIUS OCTAVIUS DEALT {} DAMAGE!\nNEXT TURN: MARCUS ANTONIUS'.format(dmg_punch))
                     
+                    if self.h_player2 <= 80:
+                        self.l_a_player2.config(image = self.a_player280)
+                    if self.h_player2 <= 60:
+                        self.l_a_player2.config(image = self.a_player260)
+                    if self.h_player2 <= 40:
+                        self.l_a_player2.config(image = self.a_player240)
+                    if self.h_player2 <= 20:
+                        self.l_a_player2.config(image = self.a_player220)
+                        
                 if opts == 'KICK':
                     self.h_player2 = self.h_player2 - dmg_kick
-                    
                     self.l_turn.config(text = 'TURN:\nPLAYER {}'.format(self.turn + 1))
                     self.l_hp.config(text = '{} HP {}'.format(self.h_player1, self.h_player2))
                     self.l_event.config(text = 'GAIUS OCTAVIUS DEALT {} DAMAGE!\nNEXT TURN: MARCUS ANTONIUS'.format(dmg_kick))
                     
+                    if self.h_player2 <= 80:
+                        self.l_a_player2.config(image = self.a_player280)
+                    if self.h_player2 <= 60:
+                        self.l_a_player2.config(image = self.a_player260)
+                    if self.h_player2 <= 40:
+                        self.l_a_player2.config(image = self.a_player240)
+                    if self.h_player2 <= 20:
+                        self.l_a_player2.config(image = self.a_player220)
+                        
                 if opts == 'HEAL':
                     if self.h_player1 < 100:
                         self.h_player1 = self.h_player1 + heal
-                        
                         self.l_turn.config(text = 'TURN:\nPLAYER {}'.format(self.turn + 1))
                         self.l_hp.config(text = '{} HP {}'.format(self.h_player1, self.h_player2))
                         self.l_event.config(text = 'GAIUS OCTAVIUS RECOVERED {} HP!\nNEXT TURN: MARCUS ANTONIUS'.format(heal))
                         
+                        if self.h_player1 > 80:
+                            self.l_a_player1.config(image = self.a_player1)
+                            
                     else:
                         self.l_turn.config(text = 'TURN:\nPLAYER {}'.format(self.turn + 1))
                         self.l_hp.config(text = '{} HP {}'.format(self.h_player1, self.h_player2))
@@ -72,26 +90,44 @@ class Game(GameOver):
             if self.turn == 2:
                 if opts == 'PUNCH':
                     self.h_player1 = self.h_player1 - dmg_punch
-                    
                     self.l_turn.config(text = 'TURN:\nPLAYER {}'.format(self.turn - 1))
                     self.l_hp.config(text = '{} HP {}'.format(self.h_player1, self.h_player2))
                     self.l_event.config(text = 'MARCUS ANTONIUS DEALT {} DAMAGE!\nNEXT TURN: GAIUS OCTAVIUS'.format(dmg_punch))
                     
+                    if self.h_player1 <= 80:
+                        self.l_a_player1.config(image = self.a_player180)
+                    if self.h_player1 <= 60:
+                        self.l_a_player1.config(image = self.a_player160)
+                    if self.h_player1 <= 40:
+                        self.l_a_player1.config(image = self.a_player140)
+                    if self.h_player1 <= 20:
+                        self.l_a_player1.config(image = self.a_player120)
+                        
                 if opts == 'KICK':
                     self.h_player1 = self.h_player1 - dmg_kick
-                    
                     self.l_turn.config(text = 'TURN:\nPLAYER {}'.format(self.turn - 1))
                     self.l_hp.config(text = '{} HP {}'.format(self.h_player1, self.h_player2))
                     self.l_event.config(text = 'MARCUS ANTONIUS DEALT {} DAMAGE!\nNEXT TURN: GAIUS OCTAVIUS'.format(dmg_kick))
                     
+                    if self.h_player1 <= 80:
+                        self.l_a_player1.config(image = self.a_player180)
+                    if self.h_player1 <= 60:
+                        self.l_a_player1.config(image = self.a_player160)
+                    if self.h_player1 <= 40:
+                        self.l_a_player1.config(image = self.a_player140)
+                    if self.h_player1 <= 20:
+                        self.l_a_player1.config(image = self.a_player120)
+                        
                 if opts == 'HEAL':
                     if self.h_player2 < 100:
                         self.h_player2 = self.h_player2 + heal
-                        
                         self.l_turn.config(text = 'TURN:\nPLAYER {}'.format(self.turn - 1))
                         self.l_hp.config(text = '{} HP {}'.format(self.h_player1, self.h_player2))
                         self.l_event.config(text = 'MARCUS ANTONIUS RECOVERED {} HP!\nNEXT TURN: GAIUS OCTAVIUS'.format(heal))
                         
+                        if self.h_player2 > 80:
+                            self.l_a_player2.config(image = self.a_player2)
+                            
                     else:
                         self.l_turn.config(text = 'TURN:\nPLAYER {}'.format(self.turn - 1))
                         self.l_hp.config(text = '{} HP {}'.format(self.h_player1, self.h_player2))
@@ -99,7 +135,6 @@ class Game(GameOver):
                         
                 if opts == 'SURRENDER':
                     self.frame.destroy(), self.w_player1()
-                    
                 self.turn = 1
                 break
         
@@ -114,6 +149,16 @@ class Game(GameOver):
         # Change these based on how long you want the game to last.
         self.h_player1 = 100
         self.h_player2 = 100
+        
+        self.a_player180 = tk.PhotoImage(file = 'res/player_1_80.png')
+        self.a_player160 = tk.PhotoImage(file = 'res/player_1_60.png')
+        self.a_player140 = tk.PhotoImage(file = 'res/player_1_40.png')
+        self.a_player120 = tk.PhotoImage(file = 'res/player_1_20.png')
+        
+        self.a_player280 = tk.PhotoImage(file = 'res/player_2_80.png')
+        self.a_player260 = tk.PhotoImage(file = 'res/player_2_60.png')
+        self.a_player240 = tk.PhotoImage(file = 'res/player_2_40.png')
+        self.a_player220 = tk.PhotoImage(file = 'res/player_2_20.png')
         
         
         # The main frame that contains the elements of the game.
@@ -163,9 +208,9 @@ class Game(GameOver):
             fg = WHITE, bg = BLACK).pack()
         
         self.a_player1 = tk.PhotoImage(file = 'res/player_1.png')
-        Label = tk.Label(f_player1, image = self.a_player1, highlightthickness = 2,
+        self.l_a_player1 = tk.Label(f_player1, image = self.a_player1, highlightthickness = 2,
             highlightbackground = WHITE, bd = 0)
-        Label.pack()
+        self.l_a_player1.pack()
         
         n_player1 = tk.Label(f_player1, text = 'GAIUS OCTAVIUS ', font = BITALIC,
             fg = WHITE, bg = BLACK).pack(side = tk.BOTTOM)
@@ -200,9 +245,9 @@ class Game(GameOver):
             fg = WHITE, bg = BLACK).pack()
         
         self.a_player2 = tk.PhotoImage(file = 'res/player_2.png')
-        Label = tk.Label(f_player2, image = self.a_player2, highlightthickness = 2,
+        self.l_a_player2 = tk.Label(f_player2, image = self.a_player2, highlightthickness = 2,
             highlightbackground = WHITE, bd = 0)
-        Label.pack()
+        self.l_a_player2.pack()
         
         n_player2 = tk.Label(f_player2, text = 'MARCUS ANTONIUS', font = BITALIC,
             fg = WHITE, bg = BLACK).pack(side = tk.BOTTOM)
