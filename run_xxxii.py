@@ -32,6 +32,7 @@ if __name__ == '__main__':
     parser.add_argument('-a', '--author', action = 'store_true', help = 'show author')
     parser.add_argument('-v', '--version', action = 'store_true', help = 'show version')
     parser.add_argument('-l', '--license', action = 'store_true', help = 'show license')
+    parser.add_argument('-c', '--credits', action = 'store_true', help = 'show credits')
     parser.add_argument('-V', '--Verbose', action = 'store_true', help = 'show verbose')
     
     args = parser.parse_args()
@@ -41,7 +42,9 @@ if __name__ == '__main__':
     elif args.version:
         print('Version 0.0.1')
     elif args.license:
-        print('Made by Clint E. This program is provided under the GPL-3.0 License.')
+        print('GPL-3.0 License.')
+    elif args.credits:
+        print('Programming -   Clint E.\nArt         -   Clint E.\nFont        -   Poppy Works')
     elif args.Verbose:
         print('Disk Version [September 27, 1986]\nHow many files (0-15)?\nNEC PC-8001 BASIC Version 2.8\nPublished by Clint\n56810 Bytes free\nOk')
     else:
