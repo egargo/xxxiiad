@@ -6,8 +6,8 @@
 * [x] Event system
     * [x] Display how much damage has a player dealt
     * [x] Display how much health has a player recovered
-* [ ] Animation
-    * [ ] Display blood on the player's avatar if their health goes below a certain point
+* [x] Animation
+    * [x] Display blood on the player's avatar if their health goes below a certain point
 * [ ] SFX and BGM
     * [ ] SFX on button click
     * [ ] BGM on main menu screen
