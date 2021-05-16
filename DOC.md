@@ -118,13 +118,14 @@ python3 run_xxxii.py
 ##### Usage
 Using the `argparse` library, I added command line options to the game. Running the command `./run_xxxii.py --h` or `python3 run_xxxii.py` will display the command line help option of the game:
 ```bash
-usage: run_xxxii.py [-h] [-a] [-v] [-l] [-V]
+usage: run_xxxii.py [-h] [-a] [-v] [-l] [-c] [-V]
 
 optional arguments:
   -h, --help     show this help message and exit
   -a, --author   show author
   -v, --version  show version
   -l, --license  show license
+  -c, --credits  show credits
   -V, --Verbose  show verbose
 ```
 
