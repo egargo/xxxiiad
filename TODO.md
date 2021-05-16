@@ -1,8 +1,5 @@
 # TODO
-* [ ] Change the events message
 * [ ] Geometry
-* [ ] Code the AI for the game
-    * [ ] Fix bug where it doesn't display the player's actions
 * [x] Frame transition
 * [x] Turn-based system
     * [x] Display whose next turn is it
