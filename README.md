@@ -6,6 +6,7 @@
 [![license](https://img.shields.io/badge/license-GPL&#8208;3.0-c74c34?labelColor=23261f&logo=gnu&logoColor=c74c34)](https://github.com/clieg/xxxii/blob/master/LICENSE)
 [![git](https://img.shields.io/badge/uses-git-c74c34?labelColor=23261f&logo=git&logoColor=c74c34)](https://git-scm.com)
 [![linux](https://img.shields.io/badge/works_on-my_machine-c74c34?labelColor=23261f&logo=fedora&logoColor=c74c34)](https://getfedora.org)
+[![size](https://img.shields.io/github/repo-size/clieg/xxxii?color=c74c34&labelColor=23261f&logo=github&logoColor=c74c34)](https://github.com/clieg/xxxii.git)
 [![lasagna_code](https://img.shields.io/badge/contains-tasty_lasagna_code-c74c34?labelColor=23261f)](https://en.wikipedia.org/wiki/Spaghetti_code#Lasagna_code)
 
 
@@ -13,7 +14,7 @@
 ![screenshot](res/screenshot.png)
 
 #### Requirements
-* Python3
+* Python3.
 * Python3 Tkinter
 
 
@@ -36,14 +37,20 @@ mkdir ~/.fonts
 # Run the game
 ./run_xxxii.py
 
+# Terminal arguments
+./run_xxxii.py -h
 ```
 
 
 #### Windows
+[Download the game](https://github.com/clieg/xxxii/archive/refs/heads/master.zip).
 Before running the game, install the Silver font, this is found at the `res/fonts/Silver.ttf` directory. To do this simply double click the font and install it.
 ```shell
 # Run the game
 python3 run_xxxii.py
+
+# Terminal arguments
+python3 run_xxxii.py -h
 ```
 *If this does not work. Maybe try dual booting, setting up a VM with Linux, or use WSL.*
 

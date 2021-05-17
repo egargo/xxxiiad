@@ -103,6 +103,8 @@ mkdir ~/.fonts
 # Run the game
 ./run_xxxii.py
 
+# Terminal arguments
+./run_xxxii.py -h
 ```
 
 
@@ -111,12 +113,15 @@ Before running the game, install the Silver font, this is found at the `res/font
 ```shell
 # Run the game
 python3 run_xxxii.py
+
+# Terminal arguments
+python3 run_xxxii.py -h
 ```
 *If this does not work. Maybe try dual booting, setting up a VM with Linux, or use WSL. I haven't tested this game on Windows machine, but considering that Python is cross-platform, then there shouldn't be any problem.*
 
 
 ##### Usage
-Using the `argparse` library, I added command line options to the game. Running the command `./run_xxxii.py --h` or `python3 run_xxxii.py` will display the command line help option of the game:
+Using the `argparse` library, I added terminal arguments to the game. Running the command `./run_xxxii.py -h` or `python3 run_xxxii.py` will display the game's terminal help argument:
 ```bash
 usage: run_xxxii.py [-h] [-a] [-v] [-l] [-c] [-V]
 
