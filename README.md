@@ -5,7 +5,7 @@
 [![python](https://img.shields.io/badge/made_with-python-c74c34?labelColor=23261f&logo=python&logoColor=c74c34)](https://python.org)
 [![license](https://img.shields.io/badge/license-GPL&#8208;3.0-c74c34?labelColor=23261f&logo=gnu&logoColor=c74c34)](https://github.com/clieg/xxxii/blob/master/LICENSE)
 [![git](https://img.shields.io/badge/uses-git-c74c34?labelColor=23261f&logo=git&logoColor=c74c34)](https://git-scm.com)
-[![linux](https://img.shields.io/badge/works_on-my_machine-c74c34?labelColor=23261f&logo=fedora&logoColor=c74c34)](https://getfedora.org)
+[![linux](https://img.shields.io/badge/works_on-my_machine-c74c34?labelColor=23261f&logo=pop_os&logoColor=c74c34)](https://pop.system76.com/)
 [![size](https://img.shields.io/github/repo-size/clieg/xxxii?color=c74c34&labelColor=23261f&logo=github&logoColor=c74c34)](https://github.com/clieg/xxxii.git)
 [![lasagna_code](https://img.shields.io/badge/contains-tasty_lasagna_code-c74c34?labelColor=23261f)](https://en.wikipedia.org/wiki/Spaghetti_code#Lasagna_code)
 

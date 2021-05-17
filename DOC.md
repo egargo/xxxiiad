@@ -77,7 +77,7 @@ In the design phase, I used the list I made in the analysis phase.
 
 
 ### Tools Used
-* [Fedora](https://getfedora.org)
+* [Pop!_OS](https://pop.system76.com/)
 * [Python](https://python.org)
 * [Atom](https://atom.io)
 * [Git](https://git-scm.com)
