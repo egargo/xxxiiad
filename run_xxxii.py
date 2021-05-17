@@ -40,7 +40,7 @@ if __name__ == '__main__':
     if args.author:
         print('Made by Clint E. <https://github.com/clieg> | BSIT - 1R1')
     elif args.version:
-        print('Version 0.0.1')
+        print('Version 0.0.5')
     elif args.license:
         print('GPL-3.0 License.')
     elif args.credits:

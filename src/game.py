@@ -150,6 +150,8 @@ class Game(GameOver):
         self.h_player1 = 100
         self.h_player2 = 100
         
+        # Players' HP indicator.
+        # These will be used when a player's HP reaches a certain point.
         self.a_player180 = tk.PhotoImage(file = 'res/player_1_80.png')
         self.a_player160 = tk.PhotoImage(file = 'res/player_1_60.png')
         self.a_player140 = tk.PhotoImage(file = 'res/player_1_40.png')
@@ -212,7 +214,7 @@ class Game(GameOver):
             highlightbackground = WHITE, bd = 0)
         self.l_a_player1.pack()
         
-        n_player1 = tk.Label(f_player1, text = 'GAIUS OCTAVIUS ', font = BITALIC,
+        n_player1 = tk.Label(f_player1, text = 'GAIUS OCTAVIUS', font = BITALIC,
             fg = WHITE, bg = BLACK).pack(side = tk.BOTTOM)
         
         
