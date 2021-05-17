@@ -1,5 +1,5 @@
 # TODO
-* [ ] Geometry
+* [x] Geometry
 * [x] Frame transition
 * [x] Turn-based system
     * [x] Display whose next turn is it
@@ -8,7 +8,3 @@
     * [x] Display how much health has a player recovered
 * [x] Animation
     * [x] Display blood on the player's avatar if their health goes below a certain point
-* [ ] SFX and BGM
-    * [ ] SFX on button click
-    * [ ] BGM on main menu screen
-    * [ ] BGM on game over screen
