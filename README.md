@@ -47,12 +47,13 @@ mkdir ~/.fonts
 Before running the game, install the Silver font, this is found at the `res/fonts/Silver.ttf` directory. To do this simply double click the font and install it.
 ```shell
 # Run the game
-python3 run_xxxii.py
+py run_xxxii.py
 
 # Terminal arguments
-python3 run_xxxii.py -h
+py run_xxxii.py -h
 ```
-*If this does not work. Maybe try dual booting, setting up a VM with Linux, or use WSL.*
+~~If this does not work. Maybe try dual booting, setting up a VM with Linux, or use WSL. I haven't tested this game on Windows machine, but considering that Python is cross-platform, then there shouldn't be any problem.~~
+This is no long true.
 
 
 ### Resources Used
